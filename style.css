@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;;
+  margin: 0px;
+  overflow-x: hidden;
+}
+h1{
+  background-color:#0880D6;
+  color:white;
+  padding: 12px;
+  font-size: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+.formulaire{
+  width: 500px;
+  border: solid 1px rgb(206, 204, 204);
+  padding:10px;
+  margin-left: 10px;
+  background-color: #E5E5E5;
+}
+.formulaire-liste{
+  width: 700px;
+  border: solid 1px rgb(206, 204, 204);
+  padding:10px;
+  margin-left: 10px;
+  font-size: 14px;
+  background-color: #E5E5E5;
+}
+.formulaire h2{
+  background-color:#0880D6;
+  color:white;
+  padding: 8px;
+  font-size: 18px;
+  margin :-10px -10px 10px;
+  text-align: center;
+}
+.formulaire-liste h2{
+  background-color:#0880D6;
+  color:white;
+  padding: 8px;
+  font-size: 18px;
+  margin :-10px -10px 10px;
+  text-align: center;
+}
+
+form div{
+display: flex;
+flex-direction: column;
+}
+form div > label{
+color: #0880D6;
+margin-bottom: 2px;
+margin-top: 12px;
+font-size: 14px;
+}
+form div > input, form div > select {
+  border: solid 1px rgb(206, 204, 204);
+  background-color: rgb(252, 252, 252);
+  font-size: 15px;
+  height: 23px;
+  }
+form div > textarea {
+    border: solid 1px rgb(206, 204, 204);
+    background-color: rgb(252, 252, 252);
+    font-size: 12px;
+    height: 75px;
+  }
+#profile{
+  font-size: 14px;
+  width: 120px;
+}
+#file{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  margin-left: -120px;
+  padding: 15px;
+  justify-content: space-evenly;
+ 
+}
+form button, #btn-init{
+  width : 130px;
+  height: 35px;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  border-radius: 3px;
+}
+#btn-creer{
+background-color: rgba(55, 116, 247, 0.932);
+color :rgb(252, 252, 252);
+border: none;
+}
+#btn-init{
+  background-color: rgba(247, 55, 71, 0.932);
+  color :rgb(252, 252, 252);
+  border: none;
+  }
+  
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#liste{
+  display: flex;
+  flex-direction: column;
+  margin: 0px -9px 0px;
+}
+
+.infos1{
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: solid 1px rgb(206, 204, 204);
+}
+.image{
+  margin-left: 10px;
+  margin-right: 40px;
+  border: solid 1px;
+  border-radius: 100%;
+  width: 120px; 
+  height: 115px;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+ width:570px;
+}
+.name-button{
+  display: flex;
+  flex-direction: row;
+}
+.numero-mail{
+  display: flex;
+  flex-direction: row;
+}
+.name p{
+margin: 6px; 
+}
+.drag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.drag-area{
+  border: 1px dashed rgb(110, 107, 107);
+  height: 150px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 1px solid rgba(55, 116, 247, 0.932);
+}
+.drag-area .icon{
+  font-size: 50px;
+  color: rgb(39, 38, 38);
+}
+.drag-area header{
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(58, 55, 55);
+}
+.drag-area span{
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(46, 45, 45);
+  margin: 10px 0 15px 0;
+}
+.drag-area button{
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  background: #5256ad;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.fa-trash-can{
+  color: #FF3838;
+  border: none;
+}
+.fa-user-pen{
+  border: none;
+  margin-left: 320px;
+}

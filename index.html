@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="conteneur">
+    <header>
+      <h1>Répertoire de contact</h1>
+    </header>
+    <section>
+      <div class="formulaire">
+        <h2>Formulaire de contact</h2>
+        <form action="" method="post">
+          <div>
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom" name="nom" required>
+          </div>
+          <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div>
+            <label for="phone">Numero</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="groupe">Groupe</label>
+            <select name="groupe" id="groupe" required>
+              <option value="" disabled selected></option>
+              <option value="Famille">Famille</option>
+              <option value="Amis">Amis</option>
+              <option value="Collegues">Collegues</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="message" required></textarea>
+          </div>
+          <div class="drag">
+            <div class="drag-area">
+              <header>Déposer la photo</header>
+              <span>Ici</span>
+              <button hidden>Importer</button>
+              <input type="file" hidden>
+            </div>
+          </div>
+          <div class="btn">
+              <button id="btn-creer" type="submit">Créer</button>
+              <input id="btn-init" type="reset" value="Réinit.">
+          </div>
+
+        </form>
+      </div>
+      <div class="formulaire-liste">
+        <h2>Liste des contacts</h2>
+        <div id="liste">
+         
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+</body>
+
+</html>
